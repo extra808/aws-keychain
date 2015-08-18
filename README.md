@@ -12,6 +12,7 @@ Manage access keys in Keychain:
   aws-keychain cat <name>
   aws-keychain env <name>
   aws-keychain ls
+  aws-keychain exec <name> <command ... >
   aws-keychain none
   aws-keychain rm <name>
   aws-keychain status
@@ -74,4 +75,8 @@ No access key at /Users/example/.aws/credentials
 
 $ aws-keychain ls
 personal
+
+$ aws-keychain exec personal aws s3 ls s3://examplebucket --summarize
+Total Objects: 0
+   Total Size: 0
 ```
