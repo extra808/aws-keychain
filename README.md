@@ -76,7 +76,6 @@ No access key at /Users/example/.aws/credentials
 $ aws-keychain ls
 personal
 
-$ aws-keychain exec personal aws s3 ls s3://examplebucket --summarize
-Total Objects: 0
-   Total Size: 0
+$ aws-keychain exec personal aws s3 ls
+2015-08-18 18:42:25 examplebucket
 ```
