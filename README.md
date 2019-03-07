@@ -1,6 +1,8 @@
 aws-keychain
 ============
 
+*Note: I recommend https://github.com/99designs/aws-vault instead, and will not be maintaining aws-keychain.*
+
 The aim of `aws-keychain` is to run commands that require AWS credentials
 without ever storing those credentials unencrypted on disk. Mac OS X's keychain
 is used for storage, and credentials are passed to commands via the well known
@@ -33,6 +35,12 @@ If you're using Zsh, copy/symlink `aws-keychain-completion.zsh` to `_aws-keychai
 
 ```sh
 ln -s $(pwd)/aws-keychain-completion.zsh /usr/local/share/zsh/site-functions/_aws-keychain
+```
+
+If you're using Bash, source `aws-keychain-completion.bash` in your `.bashrc` or copy/symlink `aws-keychain-completion.bash` to your `etc/bash_completion.d`:
+
+```sh
+ln -s $(pwd)/aws-keychain-completion.bash /usr/local/etc/bash_completion.d/aws-keychain-completion.bash
 ```
 
 
